@@ -1,75 +1,84 @@
-# MCPBench-Dev
+# Final Pool of Implemented Tasks
 
+This branch contains all tasks that have been implemented (status: implemented) from all developer branches in the BenchTasksCollv3 project.
 
-----
-#### NOTE: this readme is still under construction, please do not hesitiate to ping me (junlong) at any time. You are always welcomed!
-----
-### Before Start
+All implemented tasks till now are listed below, organized by developer.
 
-#### Use a Saperate Branch
-Please set a saperate branch for yourselves in for development. Do not push to master directly without notification, thanks!
+## Implemented Tasks by Developer
 
-#### About Proxy
-Please see `FAQs/setup_proxy.md` to see how to set up a proxy for your terminal/cmd. I only provide some general guides, so you may need extra effort to solve the proxy issue, e.g. via Google Search and asking LLMs.
+### ruige
+- file-manager (implemented)
+- data-analytics (implemented)
+- canvas-automation (implemented)
+- expense-tracker (implemented)
 
-You may need to configure some proxies for your MCP servers, e.g. `configs/mcp_servers/playwright.yaml`. You just need to uncomment the corresponding lines, the code will automatically load proxy from `configs/global_configs.py`.
+### yuxuan-dev
+- network-analyzer (implemented)
+- content-manager (implemented)
 
-However, it's hard for us to totally understand your own network environment, so you still need to try yourself for this issue. In our case, all servers are runnable on a Linux machine with proper and robust network connection.
+### fan-dev
+- price-tracker (implemented)
+- coupon-manager (implemented)
 
-### Preparation
+### gyy
+- content-scheduler (implemented)
+- social-publisher (implemented)
+- blog-engine (implemented)
+- cms-builder (implemented)
 
-#### LLM APIs
-You should have a `configs/global_configs.py`, with the template in `configs/global_configs_example.py`
+### haoze
+- subtitle-generator (implemented)
+- video-trimmer (implemented)
 
-#### Basic Env Setup
-0. install uv
+### jl_dev
+- pdf-report-generator (implemented)
+- email-classification-system (implemented)
+- canvas-grade-automation (implemented)
 
-    please refer to the official [website](https://github.com/astral-sh/uv), you may need to switch on some proxies in this process
+### junteng_dev
+- order-processor (implemented)
+- permission-manager (implemented)
+- reminder-service (implemented)
+- shipment-tracker (implemented)
+- contact-manager (implemented)
+- calendar-sync (implemented)
+- booking-system (implemented)
 
-    you should be able to see some guide after `uv`
+### junxian_dev
+- qr-generator (implemented)
+- translation-api (implemented)
 
-1. install this project
-    ```
-    git clone https://github.com/hkust-nlp/mcpbench_dev.git
-    uv init mcpbench_dev --python=3.12
-    cd mcpbench_dev
-    ```
+### lv
+- personalization-service (implemented)
+- sentiment-analyzer (implemented)
+- feedback-collector (implemented)
+- voice-processor (implemented)
+- chat-bot (implemented)
 
-2. set up pypi mirror (optional)
-    for chinese users who do not want to switch on proxy, you can add the following lines to `pyproject.toml`
+### wenshuo-dev
+- search-engine (implemented)
+- image-processor (implemented)
 
-    ```
-    [[tool.uv.index]]
-    url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-    default = true
-    ```
+### xiaochen_dev
+- security-scanner (implemented)
+- error-tracker (implemented)
+- deployment-tool (implemented)
+- monitoring-agent (implemented)
 
-    to use Tsinghua Pypi mirror
+### yuzhen-dev
+- payment-processor (implemented)
+- form-builder (implemented)
+- data-validator (implemented)
+- invoice-generator (implemented)
 
-3. install npm (see `FAQs/npm_install.md`)
+### zhaochen
+- template-engine (implemented)
+- load-balancer (implemented)
 
-#### Install and Configurate Needed MCPs
-please see `installation_guide.md` for a detailed guide.
+## Status Legend
+- **implemented**: Task implementation satisfies the requirements
+- **implementing**: Task implementation does not yet satisfy the requirements
 
-### Quick Start
+## Notion Task Tracker
 
-#### Demo
-**locally debug and test**
-
-see `scripts/debug_manual.sh` for details
-
-**update your dev-version tasks**
-
-see `scripts/update_trajectories.sh` for details
-
-#### Full Evaluation
-
-*Please skip this if you only need to add some tasks and do some small tests.
-
-see `scripts/dev.sh`
-
-### Overview of Framework
-
-see `framework_overview.md`, it contains the information you needed to add a new task. Also, it can help you better understand the structure of this evaluation benchmark.
-
-
+All tasks and their development status are tracked in the Notion page `Task Tracker` (database id: 7e41d737-4dbd-83bb-ad2a-813edd4005a0).
